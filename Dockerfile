@@ -95,3 +95,6 @@ COPY root/ /
 # ports and volumes
 EXPOSE 8000
 VOLUME /config
+
+# entrypoint for s6 overlay
+ENTRYPOINT ["/init"]
