@@ -17,7 +17,7 @@ ARG KANZI_RELEASE
 
 RUN \
 curl https://codeload.github.com/linuxserver/docker-baseimage-ubuntu/tar.gz/master | \
-  tar -xz -C root --strip=2 docker-baseimage-ubuntu-master/root && \
+  tar -xz --strip=2 docker-baseimage-ubuntu-master/root && \
  echo "**** install packages ****" && \
  apt-get update && \
  apt-get install -y \
